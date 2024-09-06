@@ -1,0 +1,20 @@
+[
+    {
+        "name": "ChiCha San Chen",
+        "location": {
+            "region": "Alhambra",
+            "lat": "34.0800614",
+            "lon": "-118.1069309"
+        },
+        "description": "Strong tea flavor, made to order."
+    },
+    {
+        "name": "Formosa Aroma",
+        "location": {
+            "region": "Alhambra",
+            "lat": "34.0921888",
+            "lon": "-118.1327143"
+        },
+        "description": "New, strong tea flavor, variety of specialty drinks, made to order."
+    }
+]

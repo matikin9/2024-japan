@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Secret Pizza",
+        "location": {
+            "region": "Lincoln Heights",
+            "lat": "34.0865216",
+            "lon": "-118.1879988"
+        },
+        "categories": [
+            "pizza"
+        ],
+        "description": "New York-style pizza"
+    },
+    {
+        "name": "Fuji & Vi's Pizza",
+        "location": {
+            "region": "Pasadena",
+            "lat": "34.1457487",
+            "lon": "-118.1312961"
+        },
+        "categories": [
+            "pizza"
+        ],
+        "description": "Detroit-style pizza"
+    },
+    {
+        "name": "Pijja Palace",
+        "location": {
+            "region": "Silverlake",
+            "lat": "34.0811009",
+            "lon": "-118.2730316"
+        },
+        "categories": [
+            "pizza", "Indian"
+        ],
+        "description": "fusion Indian bar food"
+    },
+    {
+        "name": "Quarter Sheets Pizza Club",
+        "location": {
+            "region": "Echo Park",
+            "lat": "34.0758778",
+            "lon": "-118.2569046"
+        },
+        "categories": [
+            "pizza", "dessert"
+        ],
+        "description": "Detroit-style pizza"
+    }
+]
