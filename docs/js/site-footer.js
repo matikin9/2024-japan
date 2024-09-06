@@ -30,9 +30,16 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}' + (L.Brows
     .then(results => {
         let data = results[0].data;
 
+        createMarkers(data);
         console.log(data);
     })
     .catch(err => console.error(err));
+}
+
+function createMarkers(data) {
+    data.forEach(destination => {
+        let marker = L.marker([destination.lat, destination.lon]).addTo(map);
+    });
 }
 
 
