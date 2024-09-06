@@ -28,7 +28,7 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}' + (L.Brows
  function onMapLoad() {
     Promise.all([getData(dataUrl)])
     .then(results => {
-        let data = results[0].data;
+        let data = results[0];
 
         createMarkers(data);
         console.log(data);
@@ -38,6 +38,20 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}' + (L.Brows
 
 function createMarkers(data) {
     data.forEach(destination => {
-        let marker = L.marker([destination.lat, destination.lon]).addTo(map);
+        let marker = L.marker([destination.lat, destination.lon]).bindPopup(createPopup(destination)).addTo(map);
     });
+}
+
+function createPopup(destination) {
+    let popup = L.popup();
+    let popupContent = `
+        <h2>${destination['Place']}</h2>
+        <p>Who's Interested: ${destination['Who']}</p>
+        <p>Interest Level: ${destination['Interest Level']}</p>
+        <p><a href="${destination['Google Maps URL']}">More Info</a></p>
+    `;
+
+    popup.setContent(popupContent);
+
+    return popup;
 }
