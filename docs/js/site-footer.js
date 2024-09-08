@@ -49,6 +49,7 @@ function createPopup(destination) {
         <p>Who's Interested: ${destination['Who']}</p>
         <p>Interest Level: ${destination['Interest Level']}</p>
         <p><a href="${destination['Google Maps URL']}">More Info</a></p>
+        <p>${destination['Notes']}</p>
     `;
 
     popup.setContent(popupContent);
